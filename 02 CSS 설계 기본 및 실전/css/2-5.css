@@ -1,0 +1,108 @@
+/* 베이스 그룹 =================================================== */
+body {
+  font-family: sans-serif;
+}
+
+/* 베이스 그룹 =================================================== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 레이아웃 그룹 ================================================== */
+.ly_cont {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* 모듈 ========================================================= */
+/*#main span {*/
+/*  color: #555;*/
+/*  font-size: 14px;*/
+/*}*/
+
+/*#main div.bl_module.main-module {*/
+/*#main .bl_module.main-module {*/
+/*.bl_module.main-module {*/
+/*.bl_module {*/
+.bl_media {
+/* 가운데 정렬 */
+/*  max-width: 1200px;*/
+/*  margin-left: auto;*/
+/*  margin-right: auto;*/
+/*  padding-left: 15px;*/
+/*  padding-right: 15px;*/
+
+/* 모듈에 대한 지정 */
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  /*font-family: sans-serif;*/
+  line-height: 1.5;
+}
+
+/*#main div.bl_module.main-module figure {*/
+/*#main .bl_module.main-module .image-wrapper {*/
+/*.bl_module.main-module .image-wrapper {*/
+/*.bl_module .image-wrapper {*/
+/*.bl_module .bl_module_imageWrapper {*/
+.bl_media_imageWrapper {
+  flex: 1 1 25%;
+  margin-right: 3.33333%;
+}
+
+/*#main div.module.main-module img {*/
+/*#main .bl_module.main-module .image-wrapper img {*/
+/*.bl_module.main-module .image-wrapper img {*/
+/*.bl_module .image-wrapper img {*/
+/*.bl_module .bl_module_imageWrapper img {*/
+.bl_media_imageWrapper img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/*#main div.bl_module.main-module div {*/
+/*#main .bl_module.main-module .body {*/
+/*.bl_module.main-module .body {*/
+/*.bl_module .body {*/
+/*.bl_module .bl_module_body {*/
+.bl_media_body {
+  flex: 1 1 68.33333%;
+}
+
+/*#main div.bl_module.main-module h2 {*/
+/*#main div.bl_module.main-module .title {*/
+/*#main .bl_module.main-module .title {*/
+/*.bl_module.main-module .title {*/
+/*.bl_module .title {*/
+/*.bl_module .bl_module_title {*/
+.bl_media_title {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/*#main .bl_module.main-module .body > span {*/
+/*.bl_module.main-module .body > span {*/
+/*.bl_module .body > span {*/
+/*.bl_module .bl_module_body > span {*/
+.bl_media_body > span {
+  color: #555;
+  font-size: 14px;
+}
+
+/*#main div.bl_module.main-module h3 {*/
+/*#main div.bl_module.main-module .sub-title {*/
+/*#main .bl_module.main-module .sub-title {*/
+/*.bl_module.main-module .sub-title {*/
+.subTitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  border-bottom: 1px solid #555;
+}
