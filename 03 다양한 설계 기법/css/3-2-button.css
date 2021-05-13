@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+#main .btn {
+  display: inline-block;
+
+  width: 300px;
+  max-width: 100%;
+
+  padding: 20px 10px;
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#main .general {
+  color: #fff;
+  background-color: #e25c00;
+}
+
+#main .cancel {
+  color: #222;
+  background-color: #f1de00;
+}
