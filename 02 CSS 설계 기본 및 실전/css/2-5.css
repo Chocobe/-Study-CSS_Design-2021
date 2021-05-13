@@ -44,6 +44,34 @@ img {
   line-height: 1.5;
 }
 
+/* 좌우 위치 반전에 대한 Modifier */
+/*.bl_media__rev {*/
+/*  flex-direction: row-reverse;*/
+/*  text-align: right;*/
+/*}*/
+/*.bl_media_imageWrapper__rev {*/
+/*  margin-right: 0;*/
+/*}*/
+/*.bl_media_body__rev {*/
+/*  margin-right: 3.33333%;*/
+/*}*/
+.bl_media__rev {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.bl_media__rev .bl_media_imageWrapper {
+  margin-right: 0;
+}
+.bl_media__rev .bl_media_body {
+  margin-right: 3.33333%;
+}
+
+/* 이미지 border Modifier */
+.bl_media_imageWrapper__bordered {
+  padding: 2px;
+  border: 1px solid #aaa;
+}
+
 /*#main div.bl_module.main-module figure {*/
 /*#main .bl_module.main-module .image-wrapper {*/
 /*.bl_module.main-module .image-wrapper {*/

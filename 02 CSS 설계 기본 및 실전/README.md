@@ -215,7 +215,7 @@ HTML과 느슨하게 결합된 상태란, ``HTML Tag 셀렉터`` 또는 ``특정
 
 ``요소`` 셀렉터 역시 특정 ``요소`` 에 지나치게 의존합니다.
 
-```css
+```html
 <article>
 /* 요소 태그에 지나친 의존 입니다 */
 </article>
@@ -326,4 +326,107 @@ HTML과 느슨하게 결합된 상태란, ``HTML Tag 셀렉터`` 또는 ``특정
 
 ## 08. 확장하기 쉽다.
 
- 
+여기서 ``확장하기 쉽다``란, ``가능한 변경을 견딜 수 있도록 설계`` 한다는 뜻 입니다.
+
+클래스를 설계하는데는 두가지 방법이 있습니다.
+
+* 싱글 클래스 (Single Class)
+* 멀티 클래스 (Multi Class)
+
+``확장하기 쉽다``에 초점을 두면, ``멀티 클래스(Multi Class)`` 설계를 채용하는 것이 유리합니다.
+
+이유는 다음과 같은 특징이 있기 때문입니다.
+
+|분류|싱글 클래스 (Single Class)|멀티 클래스 (Multi Class)|
+|---|---|---|
+|클래스 정의|모듈 클래스를 항상 ``단일 클래스``로 만듭니다|형태, 기능, 역할에 따라 ``분리된 형식으로 클래스``를 만듭니다|
+|HTML상의 Class 형태|class가 하나이므로, HTML 코드가 간결합니다|형태, 기능, 역할에 따라 복수의 class를 가지게 됩니다|
+|CSS 상의 class 정의|중복코드가 많아지므로, CSS코드가 비대화 됩니다|형태, 기능, 역할에 맞는 스타일을 구조적으로 만들게 됩니다|
+|단점|CSS 모듈 확장성이 낮습니다|프로젝트 상의 CSS 학습비용이 발생합니다|
+
+위의 예로써 버튼 요소에 대한 스타일을 작성해 보면 다음과 같습니다.
+
+<br/>
+
+### 싱글 클래스 (Single Class)
+
+```html
+<!-- html 소스코드 (싱글 클래스) -->
+
+<button class="el_btn">
+  기본버튼
+</button>
+
+<button class="el_btnCancel">
+  취소버튼
+</button>
+```
+
+```css
+/* 기본버튼 스타일 (싱글 클래스) */
+.el_btn {
+  width: 300px;
+  max-width: 100%;
+
+  padding: 20px 10px;
+
+  display: inline-block;
+
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  
+  transition: all 0.3s;
+}
+```
+
+<br/>
+
+### 멀티 클래스 (Multi Class)
+
+```html
+<button class="el_btn">
+  기본 버튼
+</button>
+
+<button class="el_btn hp_cancel">
+  취소버튼
+</button>
+```
+
+```css
+.el_btn {
+  width: 300px;
+  max-width: 100%;
+
+  padding: 20px 10px;
+
+  display: inline-block;
+
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+/* 헬퍼 클래스(Helper Class) 또는 유틸리티 클래스(Utility Class) */
+.hp_cancel {
+  color: #bb852b;
+  font-weight: 800;
+}
+```
+
+<br/>
+
+위의 예시와 같이 ``싱글 클래스 (Single Class)``는 중복 코드의 문제도 있으며, 코드 확장성이 낮기 때문에 CSS 설계방법에는 사용되지 않습니다.
+
+즉, ``OOCSS``, ``SMACSS``, ``BEM``, ``PRECSS`` 와 같은 CSS 설계 기법에서는 ``멀티 클래스 (Multi Class)`` 를 기본으로 사용 합니다.
+
+
+
+<br/>
+
+[🐫 Top](#top)
+
+<br/><br/>
