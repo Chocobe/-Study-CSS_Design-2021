@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* 카드 모듈 3개를 가진 부모 모듈 */
+.bl_3colCardUnit {
+  display: flex;
+  justify-content: center;
+}
+
+.bl_3colCardUnit_item {
+  width: 31.707%;
+  margin-right: 2.43902%;
+}

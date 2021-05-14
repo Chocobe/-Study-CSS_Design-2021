@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* card 블록 */
+.bl_card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* card 블록의 이미지 */
+.bl_card_imgWrapper {
+  position: relative;
+
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.bl_card_imgWrapper img {
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+/* card 블록의 body */
+.bl_card_body {
+  padding: 15px;
+}
+
+.bl_card_title {
+  margin-bottom: 5px;
+
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+.bl_card_content {
+  color: #777;
+}

@@ -845,3 +845,346 @@ BEM은 이름규칙을 변형하여 사용하는 방법도 가능 합니다.
   */
 }
 ```
+
+
+
+<br/><br/>
+
+
+
+## PRECSS
+
+``PRECSS``는 ``SMACSS`` 와 ``BEM``의 혼합된 설계 기법 입니다.
+
+``PRECSS``의 역할별 분류 방법은 다음과 같습니다.
+
+* 베이스 (Base)
+* 레이아웃 (Layout)
+* 블록 모듈 (Block Module)
+* 엘리먼트 모듈 (Element Module)
+* 헬퍼 (Helper)
+* 유니크 (Unique)
+* 프로그램 (Program)
+
+<br/>
+
+### PRECSS 네이밍 규칙
+
+* ``두 글자 접두사``를 사용하여 그룹을 나타냅니다.
+* 접두사 다음으로 ``언더스코어(_)``를 사용하고, 그 뒤에 ``클래스명``을 사용 합니다.
+* 복합 단어의 경우는 ``로우 캐멀 케이스``를 사용 합니다.
+
+아래는 ``PRECSS`` 사용 예 입니다.
+
+```html
+<!-- 의미상 최상위 부모인 "bl_halfMedia"만 상속받는 방식의 class명 사용 -->
+<div class="bl_halfMedia">
+  <img class="bl_halfMedia_img">
+  <div class="bl_halfMedia_desc">
+    <h3 class="bl_halfMedia_title">
+      제목
+    </h3>
+
+    <p class="bl_halfMedia_content">
+      컨텐츠
+    </p>
+  </div>
+</div>
+```
+
+```html
+<!-- 계층을 모두 상속받는 방식의 class명 사용 -->
+<div class="bl_halfMedia">
+  <img class="bl_halfMedia_img">
+  <div class="bl_halfMedia_desc">
+    <h3 class="bl_halfMedia_desc_title">
+      제목
+    </h3>
+
+    <p class="bl_halfMedia_desc_content">
+      컨텐츠
+    </p>
+  </div>
+</div>
+```
+
+<br/>
+
+### 베이스 (Base)
+
+``SMACSS``와 동일하며, 특징으로는 다음과 같습니다.
+
+* ``접두사를 사용하지 않습니다``.
+
+* ``베이스 (Base)``는 프로젝트 전체에 대한 표준 스타일을 정의하는 영역 입니다.
+
+* 프로젝트 전체 표준 스타일 이므로, ``Reset CSS``의 역할을 하는 부분으로 이해할 수 있습니다.
+
+```css
+html {
+  /* <html> 태그에 대한 베이스(Base) 스타일 */
+}
+
+a {
+  /* <a> 태그에 대한 베이스(Base) 스타일 */
+}
+
+img {
+  /* <img> 태그에 대한 베이스(Base) 스타일 */
+}
+```
+
+<br/>
+
+### 레이아웃 (Layout)
+
+``SMACSS``와 동일하며, 특징으로는 다음과 같습니다.
+
+* ``접두사``로 ``ly_``를 사용 합니다. 
+* ``레이아웃 (Layout)``은 ``헤더``, ``메인``, ``푸터`` 등 과 같이 프로젝트의 큰 틀을 구성하는 ``큰 모듈``에 대한 규칙(스타일) 입니다.
+
+```css
+.ly_header {
+  /* 헤더 레이아웃에 대한 스타일 */
+}
+
+.ly_footer {
+  /* 푸터 레이아웃에 대한 스타일 */
+}
+```
+
+<br/>
+
+### 블록 모듈 (Block Module)
+
+``블록 모듈 (Block Module)``은 ``자녀 요소`` 또는 ``엘리먼트 (Element) 모듈``을 포함할 수 있는 모듈을 말합니다.
+
+즉, 여러 요소들을 하나로 묶은 형태로 ``재사용할 수 있는 모듈``을 말합니다.
+
+또한, 다른 요소에 ``영향을 주지 않는 스타일만`` 사용합니다. (레이아웃 스타일 사용 불가)
+
+다음은 ``카드 모듈``을 작성한 예입니다.
+
+```html
+<!-- card 모듈 -->
+<div class="bl_card">
+  <figure class="bl_card_imgWrapper">
+    <img src="card.jpg" alt="카드 이미지">
+  </figure>
+
+  <div class="bl_card_body">
+    <!-- card 제목 -->
+    <p class="bl_card_title">
+      카드 제목
+    </p>
+
+    <!-- card 내용 -->
+    <p class="bl_card_content">
+      카드 내용
+    </p>
+  </div>
+</div>
+```
+
+```css
+/* card 모듈 */
+.bl_card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* card 이미지 */
+.bl_card_imgWrapper {
+  position: relative;
+  
+  padding-top: 56.25%;
+
+  overflow: hidden;
+}
+
+.bl_card_imgWrapper img {
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.bl_card_body {
+  padding: 15px;
+}
+
+/* card 제목 */
+.bl_card_title {
+  margin-bottom: 5px;
+
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+.bl_card_content {
+  color: #777;
+}
+```
+
+<br/>
+
+만약, 위의 ``.bl_card`` 블록을 ``레이아웃`` 스타일을 사용하여 배치해야 할 경우는, ``.bl_card``를 사용하는 요소에서 ``레이아웃 스타일``을 사용 합니다.
+
+이는 ``.bl_card`` 블록을 어디에서나 재사용할 수 있도록 하기 위함 입니다.
+
+```html
+<!-- card 블록 3개를 column으로 가지는 Block -->
+<div class="bl_3colCardUnit">
+  <!-- card 블록 1개 -->
+  <div class="bl_3colCardUnit bl_card">
+    ... 생략
+  </div>
+
+  <!-- card 블록 1개 -->
+  <div class="bl_3colCardUnit bl_card">
+    ... 생략
+  </div>
+
+  <!-- card 블록 1개 -->
+  <div class="bl_3colCardUnit bl_card">
+    ... 생략
+  </div>
+</div>
+```
+
+```css
+.bl_3colCardUnit {
+  display: flex;
+}
+
+.bl_3colCardUnit_item {
+  width: 31.707%;
+
+  margin-right: 2.43902%;
+}
+```
+
+<br/>
+
+### 엘리멘트 모듈 (Element Module)
+
+``엘리먼트 모듈 (Element Module)``은 가장 작은 단위의 모듈로, 제목, 버튼, 라벨과 같은 요소들이 해당됩니다.
+
+또한 ``엘리먼트 모듈 (Element Module)``은 ``어디에나`` 사용할 수 있어야 하는 ``범용적 모듈``이 되야 하므로, ``범용적 이름 (추상화)``로 작성해야 합니다.
+
+<br/>
+
+``엘리먼트 모듈 (Element Module)`` 역시 ``레이아웃`` 관련 스타일은 하지 않지만, ``엘리먼트 모듈 (Element Module)``의 변형은 몇 가지의 경우로 한정 되므로, ``width``를 직접 지정하거나, ``Modifier``를 사용할 수도 있습니다. 
+
+만약 ``엘리먼트 모듈 (Element Module)``에 ``width``를 지정하거나 ``Modifier``를 사용한다면, 구체적인 수치 ``(200px)`` 보다는 ``small``, ``long``과 같은 ``단어 사용``을 권장 합니다.
+
+이유는 반응형에 의해 규격이 변형됬을 때, 해당 값이 ``일치하지 않기`` 때문입니다. 
+
+<br/>
+
+### 모디파이어 (Modifier)
+
+``PRECSS``에서도 ``Modifier``는 ``Block``또는 ``Element``의 모습, 상태, 움직임을 정의하는 모듈 입니다.
+
+``Modifier``를 사용한다는 것은 기본 스타일을 ``덮어쓰는`` 방법 입니다.
+
+<br/>
+
+``BEM``과 차이점은 클래스의 ``상세도를 높이는 것``을 권장하고 있습니다.
+
+이러한 이유는 ``덮어쓰기``라는 방법은 ``class 선언 순서``에 따라 다른 결과가 나올 수 있기 때문에, ``CSS의 선언 순서 상관없이`` 동작하도록 하기 위함 입니다.
+
+<br/>
+
+### 헬퍼 (Helper) 그룹
+
+``헬퍼 (Helper)``는 ``딱 하나의 스타일만 변경``하고자 할 때 사용할 수 있는 클래스 입니다.
+
+``헬퍼 (Helper)``를 사용한다는 것은 ``의도적으로`` 스타일을 조정하는 것이기 때문에 ``!important`` 사용을 권장 합니다.
+
+``음수값``을 사용할 경우에는 ``.hp_MT20`` 과 같이 대상 속성명을 ``대문자``로 사용 합니다.
+
+``소수점``을 사용할 경우에는 ``.hp_mt2_5e`` 와 같이 소수점을 ``언더스코어(_)``로 사용 합니다.
+
+다음은 사용 예 입니다.
+
+```html
+<button class="el_btn mb_b20">
+  마진 bottom 20px 버튼
+</button>
+
+<button class="el_btn mb_t20">
+  마진 top 20px 버튼
+</button>
+``` 
+
+```css
+.hp_mb20 {
+  margin-bottom: 20px !important;
+}
+
+.hp_mt20 {
+  margin-top: 20px !important;
+}
+
+.hp_MT20 {
+  margin-top: -20px !important;
+}
+
+.hp_mt2_5e {
+  margin-top: 2.5em !important;
+}
+```
+
+<br/>
+
+### 유니크 (Unique) 그룹
+
+``유니크 (Unique)`` 그룹은 ``특정 페이지에서만 사용``하는 제한된 스타일이며, ``Block 모듈`` 대신 사용할 수 있습니다.
+
+오직 한 페이지에서만 사용하므로, ``재사용성이 없는`` 스타일 입니다.
+
+때문에 ``유니크 (Unique)`` 클래스는 ``주석``으로 사용 페이지를 명시 해야만 합니다.
+
+``재사용성이 없는``대신, 다른 곳에 대한 영향력에 신경쓰지 않고 ``망설임 없이 수정, 삭제``할 수 있는 클래스 입니다.
+
+``유니크 (Unique)`` 클래스를 사용하는 경우는, ``불규칙적인`` 스타일에 대해 사용할 수 있는 ``구조 회피방법`` 입니다.
+
+``유니크 (Unique)`` 클래스는 다음과 같이 사용할 수 있습니다.
+
+```html
+<div class="un_card">
+  <figure class="un_card_img">
+    <img src="이미지">
+  </figure>
+
+  <div class="un_card_body">
+    <p class="un_card_title">
+      유니크 카드 제목
+    </p>
+
+    <p class="un_card_content">
+      유니크 카드 컨텐츠
+    </p>
+  </div>
+</div>
+```
+
+<br/>
+
+### 프로그램 (Program) 그룹
+
+``SMACSS``의 ``state``처럼 ``프로그램에 의해`` 할당되는 클래스 입니다.
+
+``SMACSS``와 다른 점은 ``요소의 상태``에 대한 스타일요 ``프로그램 (Program)`` 클래스에 해당 합니다.
+
+따라서 ``프로그램 (Program)`` 클래스는 다음 두가지 경우에 사용할 수 있습니다.
+
+* ``js_xxx``: ``Javascript``에 의해 할당되는 스타일 클래스 입니다.
+* ``is_xxx``: ``요소의 상태``에 대한 스타일 클래스 입니다.
+
+여기서 중요한 점은 ``요소의 상태``에 대한 클래스는 ``상세도를 높여서`` 만들어야 의도치 않은 동작을 피할 수 있고, 꼭 적용되야 하는 스타일 이므로, ``!important``를 권장 합니다.

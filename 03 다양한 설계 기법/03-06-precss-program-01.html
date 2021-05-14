@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/03-06-precss-program-01.css">
+  </head>
+
+  <body>
+    <div class="bl_accordion js_accordion" onmouseenter="openAccordion(event)" onmouseleave="closeAccordion(event)">
+      <div>
+        <a class="bl_accordion_title js_accordion_title" href="#">
+          아코디언 타이틀
+        </a>
+      </div>
+
+      <!-- Javascript엥 의해 ".is_active"가 할당 됩니다 -->
+      <div class="bl_accordion_content js_accordion_body " onmouseleave="closeAccordion(event)">
+        ".is_active"에 따라 화면에 출력 됩니다.
+      </div>
+    </div>
+
+    <script lang="javascript">
+      function openAccordion(event) {
+        const targetElement = event.target;
+        targetElement.querySelector(".js_accordion_body").classList.add("is_active");
+      }
+
+      function closeAccordion(event) {
+        const targetElement = event.target.classList.remove("is_active");
+      }
+    </script>
+  </body>
+</html>

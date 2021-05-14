@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.js_accordion_body {
+  display: none;
+}
+
+.js_accordion_body.is_active {
+  display: block;
+}
