@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* 베이스 (Base) */
+body {
+  background-color: #fff;
+}
+
+a > img {
+  transition: 0.25s;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* ID 타입 */
+/* 레이아웃 (Layout) - 기본 스타일 */
+#header {
+  width: 1080px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #fff;
+}
+
+#main {
+  width: 1080px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #fff;
+}
+
+#footer {
+  width: 1080px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #eee;
+}
+
+.l-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* 레이아웃 (Layout) - 좁은 스타일 */
+.l-narrow #header {
+  width: 960px;
+}
+
+.l-narrow #main {
+  width: 960px;
+}
+
+.l-narrow #footer {
+  width: 960px;
+}
+
+/* class 타입 */
+/* 레이아웃 (Layout) - 기본 스타일 */
+.l-header {
+  width: 1080px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #fff;
+}
+
+.l-main {
+  width: 1080px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #fff;
+}
+
+.l-footer {
+  width: 1080px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #eee;
+}
+
+.l-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* 레이아웃 (Layout) - 좁은 스타일 */
+.l-narrow .l-header {
+  width: 960px;
+}
+
+.l-narrow .l-main {
+  width: 960px;
+}
+
+.l-narrow .l-footer {
+  width: 960px;
+}

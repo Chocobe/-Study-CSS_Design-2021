@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.tabnav {
+  display: flex;
+}
+
+.tabnav > li {
+  list-style-type: none;
+
+  border-top: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.tabnav > li:first-child {
+  border-left: 1px solid #aaa;
+}
+
+.tabnav > li > a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+/* 활성화 스테이트 (State) 스타일 */
+.is-tabnav-active {
+  background-color: #0093ff;
+}
+
+.is-tabnav-active > a {
+  /* click 이벤트 발생 무시 */
+  pointer-events: none;
+  color: #fff;
+}
