@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.ly_footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #222;
+}
+
+.ly_footer_inner {
+  width: 1230px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.hp_btGray {
+  border-top: 1px solid #777 !important;
+}

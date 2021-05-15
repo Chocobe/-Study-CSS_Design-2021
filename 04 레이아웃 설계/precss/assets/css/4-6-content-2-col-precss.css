@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* 헤더 */
+.ly_header {
+  padding-top: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ly_header_inner {
+  max-width: 1230px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* 컨텐츠 */
+.ly_cont {
+  max-width: 1230px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding: 60px 15px;
+}
+
+.ly_cont.ly_cont__col {
+  display: flex;
+}
+
+.ly_cont_main {
+  flex: 1;
+  margin-right: 3.25203%;
+}
+
+.ly_cont_side {
+  flex: 0 0 260px;
+}
+
+@media screen and (max-width: 768px) {
+  .ly_cont.ly_cont__col {
+    flex-direction: column;
+  }
+
+  .ly_cont_main {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+}
+
+/* 푸터 */
+.ly_footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #222;
+}
+
+.ly_footer_inner {
+  max-width: 1230px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-right: 15px;
+  padding-left: 15px;
+
+  color: #fff;
+}
+
+/* Helper */
+.hp_bgcBase {
+  background-color: #efefef !important;
+}
+
+.hp_btGray {
+  border-top: 1px solid #777 !important;
+}

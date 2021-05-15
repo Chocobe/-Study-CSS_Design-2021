@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #222;
+}
+
+.footer-border-top-gray {
+  border-top: 1px solid #777;
+}
+
+.footer__inner {
+  max-width: 1230px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-right: 15px;
+  padding-left: 15px;
+}
