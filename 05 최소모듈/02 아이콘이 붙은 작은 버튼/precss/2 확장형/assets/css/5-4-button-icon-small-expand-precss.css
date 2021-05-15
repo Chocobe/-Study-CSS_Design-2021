@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.ly_body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.el_beforeIconBtn {
+  display: inline-block;
+  position: relative;
+
+  padding: 0.2em 0.3em;
+
+  border: 1px solid currentColor;
+
+  color: #e25c00;
+  text-decoration: none;
+
+  transition: all 0.25s;
+}
+
+.el_beforeIconBtn:hover,
+.el_beforeIconBtn:focus {
+  background-color: #e25c00;
+  color: #fff;
+}
+
+.el_beforeIconBtn::before {
+  display: inline-block;
+
+  margin-right: 0.1em;
+
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.el_beforeIconBtn__expand::before {
+  content: "\f00e";
+  transform: translateY(-6%);
+}
