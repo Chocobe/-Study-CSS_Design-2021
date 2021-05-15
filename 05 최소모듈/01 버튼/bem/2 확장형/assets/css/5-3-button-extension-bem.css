@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+
+  width: 300px;
+  max-width: 100%;
+
+  padding: 20px 10px;
+
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: center;
+  text-decoration: none;
+
+  border: 2px solid transparent;
+  background-color: #e25c00;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  transition: all 0.25s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #fff;
+  color: #e25c00;
+  border-color: currentColor;
+}
+
+/* 아이콘 */
+.btn_arrowRight {
+  position: relative;
+
+  padding-right: 2em;
+  padding-left: 1.38em;
+}
+
+.btn_arrowRight::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+
+  position: absolute;
+  top: 50%;
+  right: 0.83em;
+  transform: translateY(-50%);
+}
+
+.btn_marginRight20 {
+  margin-right: 20px;
+}
+
+/* 큰 버튼 */
+.btn_large {
+  width: 340px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  font-size: 1.375rem;
+}
+
+/* 경고버튼 */
+.btn_warning {
+  background-color: #f1de00;
+  color: #222;
+}
+
+.btn_warning:hover,
+.btn_warning:focus {
+  background-color: #fff;
+  color: #222;
+  border-color: #f1de00;
+}
