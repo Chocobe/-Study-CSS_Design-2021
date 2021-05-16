@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+}
+
+/* 이미지 */
+.media__imgWrapper {
+  flex: 0 1 27.58333%;
+
+  margin-right: 3.33333%;
+}
+
+.media__imgWrapper > img {
+  width: 100%;
+}
+
+/* 바디 */
+.media__body {
+  flex: 1;
+}
+
+.media__body > *:last-child {
+  margin-bottom: 0;
+}
+
+.media__title {
+  margin-bottom: 10px;
+
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .media {
+    display: block;
+  }
+
+  .media__imgWrapper {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

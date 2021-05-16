@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* 미디어 */
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.media__imgWrapper {
+  flex: 0 1 27.58333%;
+
+  margin-right: 3.33333%;
+}
+
+.media__img {
+  width: 100%;
+}
+
+.media__body {
+  flex: 1;
+}
+
+.media__body > *:last-child {
+  margin-bottom: 0;
+}
+
+.media__title {
+  margin-bottom: 10px;
+
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+/* 미디어 - reverse */
+.media_reverse {
+  flex-direction: row-reverse;
+}
+
+.media_reverse .media__imgWrapper {
+  margin-right: 0;
+}
+
+.media_reverse .media__body {
+  margin-right: 3.33333%;
+
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .media {
+    display: block;
+  }
+
+  .media__imgWrapper {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .media_reverse .media__body {
+    margin-right: 0;
+  }
+}

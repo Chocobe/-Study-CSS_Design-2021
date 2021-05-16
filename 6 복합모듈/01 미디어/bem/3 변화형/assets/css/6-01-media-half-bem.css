@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* 미디어 */
+.halfMedia {
+  display: flex;
+  align-items: center;
+}
+
+.halfMedia__imgWrapper {
+  flex: 0 1 48.33333%;
+
+  margin-right: 3.33333%;
+}
+
+.halfMedia__img {
+  width: 100%;
+}
+
+.halfMedia__body {
+  flex: 1;
+}
+
+.halfMedia__body > *:last-child {
+  margin-bottom: 0;
+}
+
+.halfMedia__title {
+  margin-bottom: 10px;
+
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .halfMedia {
+    display: block;
+  }
+
+  .halfMedia__imgWrapper {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
