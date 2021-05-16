@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.afterIcon {
+  margin-right: 1em;
+}
+
+.afterIcon::after {
+  display: inline-block;
+
+  margin-left: 0.3em;
+
+  color: #e25c00;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+/* 액셀 아이콘 */
+.afterIcon_excel::after {
+  content: "\f1c3";
+}
+
+/* PPT 아이콘 */
+.afterIcon_ppt::after {
+  content: "\f1c4";
+}
+
+/* 체크 아이콘 */
+.afterIcon_checkSquare::after {
+  content: "\f14a";
+}
+
+/* 좌측 셰브론 아이콘 */
+.afterIcon_chevronLeft::after {
+  content: "";
+
+  width: 0.375em;
+  height: 0.375em;
+
+  border-bottom: 0.125em solid currentColor;
+  border-left: 0.125em solid currentColor;
+
+  transform: rotate(45deg) translateY(-30%);
+}
