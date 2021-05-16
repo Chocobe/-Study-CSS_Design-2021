@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noteText {
+  font-size: 0.75rem;
+}

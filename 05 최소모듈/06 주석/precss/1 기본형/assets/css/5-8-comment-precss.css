@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.ly_body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.el_caution {
+  color: #d40152;
+}
