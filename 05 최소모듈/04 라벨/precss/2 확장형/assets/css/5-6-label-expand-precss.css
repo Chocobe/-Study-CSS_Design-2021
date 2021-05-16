@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.ly_body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.el_label {
+  display: inline-block;
+
+  padding: 0.2em 0.3em;
+
+  border: 2px solid transparent;
+  background-color: #e25c00;
+
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 900;
+}
+
+.el_label.el_label__yellow {
+  background-color: #f1de00;
+  color: #000;
+}
+
+a.el_label {
+  text-decoration: none;
+
+  transition: all 0.25s;
+}
+
+a.el_label:hover,
+a.el_label:focus {
+  color: #e25c00;
+  border-color: currentColor;
+  background-color: #fff;
+}
+
+/* Helper */
+.hp_mr20 {
+  margin-right: 20px;
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.ly_body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.el_roundedLabel {
+  display: inline-block;
+
+  padding: 0.3em 0.9em;
+
+  border: 2px solid transparent;
+  border-radius: 1em;
+  background-color: #e25c00;
+
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 900;
+}
+
+a.el_roundedLabel {
+  text-decoration: none;
+
+  transition: all 0.25s;
+}
+
+a.el_roundedLabel:hover,
+a.el_roundedLabel:focus {
+  color: #e25c00;
+  background-color: #fff;
+  border-color: currentColor;
+}
+
+.hp_mr20 {
+  margin-right: 20px;
+}

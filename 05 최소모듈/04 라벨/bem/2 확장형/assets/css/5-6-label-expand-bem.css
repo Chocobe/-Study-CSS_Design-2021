@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  display: inline-block;
+
+  padding: 0.2em 0.3em;
+
+  border: 2px solid transparent;
+  background-color: #e25c00;
+
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 900;
+}
+
+.label_warning {
+  background-color: #f1de00;
+  color: #000;
+}
+
+.label_link {
+  text-decoration: none;
+
+  transition: all 0.25s;
+}
+
+.label_link:hover,
+.label_link:focus {
+  color: #e25c00;
+  background-color: #fff;
+  border-color: currentColor;
+}
+
+.label_mr20 {
+  margin-right: 20px;
+}
