@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.el_lv2Heading {
+  padding-bottom: 10px;
+
+  border-bottom: 4px solid #e25c00;
+
+  font-size: 1.75em;
+  font-weight: 900;
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.lv1Heading {
+  padding: 30px 10px;
+
+  background-color: #e25c00;
+
+  color: #fff;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.lv1Heading__inner {
+  position: relative;
+  display: inline-block;
+
+  transition: all 0.25s;
+}
+
+.lv1Heading__inner::after {
+  content: "";
+
+  width: 80px;
+  height: 1px;
+
+  background-color: currentColor;
+
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}

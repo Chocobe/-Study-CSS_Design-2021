@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.lv5Heading {
+  color: #e25c00;
+  font-size: 1.125rem;
+  font-weight: 900;
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 100vw;
+  max-width: 1200px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.el_lv1Heading {
+  position: relative;
+
+  padding: 30px 10px;
+
+  background-color: #e25c00;
+
+  color: #fff;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.el_lv1Heading > span {
+  display: inline-block;
+  position: relative;
+
+  transform: translateY(-20%);
+}
+
+.el_lv1Heading > span::after {
+  content: "";
+
+  width: 80px;
+  height: 1px;
+
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: currentColor;
+}
