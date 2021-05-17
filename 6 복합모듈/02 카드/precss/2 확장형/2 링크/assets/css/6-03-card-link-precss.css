@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 1200px;
+  max-width: 100%;
+  height: 100vh;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bl_card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.bl_card_imgWrapper {
+  position: relative;
+
+  padding-top: 56.25%;
+
+  overflow: hidden;
+}
+
+.bl_card_imgWrapper > img {
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bl_card_body {
+  padding: 15px;
+}
+
+.bl_card_title {
+  margin-bottom: 5px;
+
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+.bl_card_content {
+  color: #777;
+}
+
+/* 링크 (확장) */
+a.bl_card {
+  color: #000;
+  text-decoration: none;
+
+  transition: all 0.25s;
+}
+
+a .bl_card_title,
+a .bl_card_content {
+  transition: all 0.25s;
+}
+
+a.bl_card:hover,
+a.bl_card:focus {
+  opacity: 0.75;
+}
+
+a.bl_card:hover .bl_card_title,
+a.bl_card:focus .bl_card_title,
+a.bl_card:hover .bl_card_content,
+a.bl_card:focus .bl_card_content {
+  text-decoration: underline;
+}

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+  height: 100vh;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card__imgWrapper {
+  position: relative;
+
+  padding-top: 56.25%;
+
+  overflow: hidden;
+}
+
+.card__img {
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card__body {
+  padding: 15px;
+}
+
+.card__body > *:last-child {
+  margin-bottom: 0;
+}
+
+.card__title {
+  margin-bottom: 5px;
+
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+.card__content {
+  color: #777;
+}
+
+/* 배지 */
+.card__badge {
+  position: relative;
+}
+
+.card__badge::after {
+  content: "";
+
+  width: 0;
+  height: 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+
+  border-style: solid;
+  border-width: 3.75rem 3.75rem 0 0;
+  border-color: #e25c00 transparent transparent;
+}
+
+.card__badgeText {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.2rem;
+
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 900;
+
+  transform: rotate(-45deg);
+
+  z-index: 2;
+}
