@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bl_horizTable {
+  border: 1px solid #ddd;
+}
+
+.bl_horizTable table {
+  width: 100%;
+}
+
+.bl_horizTable th {
+  width: 20%;
+
+  padding: 15px;
+
+  font-weight: 900;
+
+  border-bottom: 1px solid #ddd;
+  background-color: #efefef;
+
+  vertical-align: middle;
+}
+
+.bl_horizTable td {
+  padding: 15px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.bl_horizTable tr:last-child th,
+.bl_horizTable tr:last-child td {
+  border-bottom-width: 0;
+}
