@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* 가격 래퍼 모듈 */
+.bl_priceUnit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bl_priceUnit .bl_price {
+  flex: 1;
+
+  margin-right: 2.43902%;
+}
+
+@media screen and (max-width: 768px) {
+  .bl_priceUnit {
+    display: block;
+  }
+
+  .bl_priceUnit .bl_price {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .bl_priceUnit .bl_price:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.bl_priceUnit .bl_price:last-child {
+  margin-right: 0;
+}
+
+/* 가격 모듈 */
+.bl_price {
+  border: 1px solid #e25c00;
+}
+
+/* 가격 모듈 - 헤더 */
+.bl_price_header {
+  padding: 10px;
+
+  color: #fff;
+  text-align: center;
+
+  background-color: #e25c00;
+}
+
+.bl_price_header .bl_price_title {
+  font-size: 1.125rem;
+}
+
+.bl_price_header .bl_price_price {
+  font-size: 1.875rem;
+}
+
+.bl_price_header .bl_price_price > span {
+  font-size: 1rem;
+}
+
+/* 가격 모듈 - 바디 */
+.bl_price_body {
+  padding: 15px;
+}
+
+.bl_price_body > *:last-child {
+  margin-bottom: 0;
+}
+
+.bl_price_lead {
+  padding-bottom: 20px;
+}
+
+.bl_price_features {
+  text-align: center;
+}
+
+.bl_price_features > *:last-child {
+  margin-bottom: 0;
+}
+
+.bl_price_features dt {
+  margin-bottom: 10px;
+
+  padding: 5px;
+
+  background-color: #efefef;
+}
+
+.bl_price_features dd {
+  margin-bottom: 20px;
+}

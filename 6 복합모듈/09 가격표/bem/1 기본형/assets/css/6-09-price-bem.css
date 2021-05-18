@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* 가격 목록 모듈 */
+.priceList {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.priceList__item {
+  flex: 1;
+
+  margin-right: 2.43902%;
+}
+
+.priceList > *:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .priceList_mdScroll.priceList {
+    display: block;
+  }
+
+  .priceList_mdScroll .priceList__item {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .priceList_mdScroll > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* 가격 모듈 */
+.price {
+  border: 1px solid #e25c00;
+}
+
+/* 가격 - 헤더 모듈 */
+.price__header {
+  padding: 10px;
+
+  color: #fff;
+  text-align: center;
+
+  background-color: #e25c00;
+}
+
+.price__title {
+  font-size: 1.125rem;
+}
+
+.price__price {
+  font-size: 1.875rem;
+}
+
+.price__priceUnit {
+  font-size: 1rem;
+}
+
+/* 가격 - 바디 모듈 */
+.price__body {
+  padding: 15px;
+}
+
+.price__body > *:last-child {
+  margin-bottom: 0;
+}
+
+.price__lead {
+  margin-bottom: 20px;
+}
+
+.price__features {
+  text-align: center;
+}
+
+.price__featuresHeader {
+  margin-bottom: 10px;
+
+  padding: 5px;
+
+  background-color: #efefef;
+}
+
+.price__features > *:last-child {
+  margin-bottom: 0;
+}
+
+.price__featuresData {
+  margin-bottom: 20px;
+}

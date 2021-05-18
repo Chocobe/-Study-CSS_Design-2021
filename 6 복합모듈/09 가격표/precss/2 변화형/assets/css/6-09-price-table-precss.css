@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* 가격 테이블 */
+.bl_priceTable table {
+  width: 100%;
+
+  table-layout: fixed;
+}
+
+
+
+/* 가격 테이블 - 헤더 */
+.bl_priceTable_header {
+  padding: 10px;
+
+  color: #fff;
+  text-align: center;
+
+  border-right: 1px solid currentColor;
+  background-color: #e25c00;
+}
+
+.bl_priceTable_header:last-child {
+  border-right-width: 0;
+}
+
+.bl_priceTable_title {
+  font-size: 1.125rem;
+}
+
+.bl_priceTable_price {
+  font-size: 1.875rem;
+}
+
+.bl_priceTable_price span {
+  font-size: 1rem;
+}
+
+/* 가격 테이블 - 바디 */
+.bl_priceTable_bodyTitle {
+  padding: 10px;
+
+  text-align: right;
+  font-weight: 900;
+  vertical-align: middle;
+
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.bl_priceTable td {
+  padding: 10px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.bl_priceTable td:last-child {
+  border-right: 1px solid #ddd;
+}
+
+.bl_priceTable tr:last-child > * {
+  border-bottom: 1px solid #ddd;
+}
+
+.md_only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .md_only {
+    display: block;
+  }
+}
