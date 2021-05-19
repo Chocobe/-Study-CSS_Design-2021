@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.vertPostList__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.vertPostList__item:first-child {
+  padding-top: 0;
+}
+
+.vertPostList__header {
+  margin-bottom: 10px;
+}
+
+.vertPostList__date {
+  font-size: 0.875rem;
+}
+
+.vertPostList__title {
+  text-decoration: none;
+}
+
+.vertPostList__title:hover,
+.vertPostList__title:focus {
+  text-decoration: underline;
+}
