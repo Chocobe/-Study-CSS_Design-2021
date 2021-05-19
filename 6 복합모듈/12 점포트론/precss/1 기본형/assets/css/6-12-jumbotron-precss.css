@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bl_jumbotron {
+  height: calc(69.44444vw - 233px);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.bl_jumbotron_inner {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+}
+
+.bl_jumbotron_title {
+  padding: 40px;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  color: #fff;
+  font-size: calc(3.704vw - 8px);
+
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (min-width: 1200px) {
+  .bl_jumbotron {
+    height: 600px;
+  }
+
+  .bl_jumbotron_title {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bl_jumbotron {
+    height: 300px;
+  }
+
+  .bl_jumbotron_title {
+    width: 90%;
+
+    padding: 15px;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .hp_mdOnly {
+    display: none;
+  }
+}
