@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bl_faq > *:last-child {
+  margin-bottom: 0;
+}
+
+.bl_faq_q,
+.bl_faq_a {
+  min-height: 45px;
+
+  padding-left: 60px;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+
+  /*box-sizing: content-box;*/
+}
+
+/* 질문 */
+.bl_faq_q {
+  margin-bottom: 15px;
+
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+.bl_faq_q_data {
+  padding-top: 12px;
+}
+
+/* 답변 */
+.bl_faq_a {
+  margin-bottom: 20px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.bl_faq_a_body {
+  padding-top: 12px;
+}
+
+.bl_faq_a_data {
+  margin-bottom: 20px;
+}
+
+.bl_faq_a_body > *:last-child {
+  margin-bottom: 0;
+}
+
+/* 아이콘 */
+.bl_faq_icon {
+  width: 45px;
+  height: 45px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 50%;
+
+  font-weight: normal;
+  text-align: center;
+  line-height: 45px;
+}
+
+.bl_faq_q .bl_faq_icon {
+  color: #fff;
+
+  background-color: #e25c00;
+}
+
+.bl_faq_a .bl_faq_icon {
+  color: #e25c00;
+
+  background-color: #efefef;
+}
