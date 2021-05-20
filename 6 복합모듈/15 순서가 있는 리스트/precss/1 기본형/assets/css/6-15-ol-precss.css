@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bl_orderList {
+  counter-reset: bl_orderList;
+}
+
+.bl_orderList > *:last-child {
+  margin-bottom: 0;
+}
+
+.bl_orderList > li {
+  margin-bottom: 10px;
+
+  padding-left: 1em;
+
+  position: relative;
+}
+
+.bl_orderList > li::before {
+  counter-increment: bl_orderList;
+  content: counter(bl_orderList) ". ";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: #e25c00;
+  font-size: 0.875em;
+  font-weight: 900;
+}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.orderList {
+  counter-reset: orderList;
+}
+
+.orderList > *:last-child {
+  margin-bottom: 0;
+}
+
+.orderList__item {
+  margin-bottom: 10px;
+
+  padding-left: 1em;
+
+  position: relative;
+}
+
+.orderList__item::before {
+  counter-increment: orderList;
+  content: counter(orderList) ". ";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: #e25c00;
+  font-weight: 900;
+}
+
+/* 변화형 - 하위 리스트 */
+.childOrderList {
+  margin-top: 10px;
+
+  counter-reset: childOrderList;
+}
+
+.childOrderList > *:last-child {
+  margin-bottom: 0;
+}
+
+.childOrderList__item {
+  margin-bottom: 10px;
+
+  padding-left: 1em;
+
+  position: relative;
+}
+
+.childOrderList__item::before {
+  counter-increment: childOrderList;
+  content: counter(childOrderList) ". ";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: #e25c00;
+}
