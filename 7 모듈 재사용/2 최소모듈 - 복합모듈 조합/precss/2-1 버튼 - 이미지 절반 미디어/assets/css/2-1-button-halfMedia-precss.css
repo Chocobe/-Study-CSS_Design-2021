@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bl_halfMedia_content {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .el_btn {
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

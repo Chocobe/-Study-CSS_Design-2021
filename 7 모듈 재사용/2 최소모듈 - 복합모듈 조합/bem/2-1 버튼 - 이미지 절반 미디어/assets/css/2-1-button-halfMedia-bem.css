@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.halfMedia__content {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn_arrowRight {
+    margin-right: auto;
+    margin-left: auto;
+
+    display: block;
+  }
+}

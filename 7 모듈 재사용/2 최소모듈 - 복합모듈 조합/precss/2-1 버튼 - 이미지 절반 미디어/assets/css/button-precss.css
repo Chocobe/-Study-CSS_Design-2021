@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+.ly_btn_test {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hp_test_mt20 {
+  margin-top: 20px;
+}
+
+.el_btn {
+  width: 300px;
+  max-width: 100%;
+
+  padding: 20px 10px;
+
+  display: inline-block;
+
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+
+  border: 2px solid transparent;
+  background-color: #e25c00;
+
+  transition: all 0.25s;
+}
+
+.el_btn:hover,
+.el_btn:focus {
+  color: #e25c00;
+
+  border-color: currentColor;
+  background-color: #fff;
+}
+
+/* 확장 스타일 - 노란색 버튼 */
+.el_btn__yellow {
+  color: #222;
+
+  background-color: #f1de00;
+}
+
+.el_btn__yellow:hover,
+.el_btn__yellow:focus {
+  border-color: #f1de00;
+}
+
+/* 확장 스타일 - 우측 화살표 버튼 */
+.el_btn__arrowRight {
+  padding-right: 2rem;
+  padding-left: 1.38rem;
+
+  position: relative;
+}
+
+.el_btn__arrowRight::after {
+  content: "\f061";
+
+  position: absolute;
+  top: 50%;
+  right: 0.83rem;
+  transform: translateY(-50%);
+
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}

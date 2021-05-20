@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.testBody {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hp_test_mt20 {
+  margin-top: 20px;
+}
+
+.btn {
+  width: 300px;
+  max-width: 100%;
+
+  padding: 20px 10px;
+
+  display: inline-block;
+
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+
+  border: 2px solid transparent;
+  background-color: #e25c00;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  transition: all 0.25s;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #e25c00;
+
+  border-color: currentColor;
+  background-color: #fff;
+}
+
+/* 확장 스타일 - 노란색 버튼 */
+.btn_yellow {
+  color: #222;
+
+  background-color: #f1de00;
+}
+
+.btn_yellow:hover,
+.btn_yellow:focus {
+  border-color: #f1de00;
+}
+
+/* 확장 스타일 - 우측 화살표 버튼 */
+.btn_arrowRight {
+  padding-right: 2em;
+  padding-left: 1.38em;
+
+  position: relative;
+}
+
+.btn_arrowRight::after {
+  content: "\f061";
+
+  position: absolute;
+  top: 50%;
+  right: 0.83em;
+  transform: translateY(-50%);
+
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}

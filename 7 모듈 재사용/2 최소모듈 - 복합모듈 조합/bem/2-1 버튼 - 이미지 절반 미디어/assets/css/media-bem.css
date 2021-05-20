@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+.testBody {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.media__imgWrapper {
+  margin-right: 3.33333%;
+
+  flex: 0 1 27.58333%;
+}
+
+.media__img {
+  width: 100%;
+}
+
+.media__body {
+  flex: 1;
+}
+
+.media__body > *:last-child {
+  margin-bottom: 0;
+}
+
+.media__title {
+  margin-bottom: 10px;
+
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .media {
+    display: block;
+  }
+
+  .media__imgWrapper {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* 확장형 - 이미지 절반 스타일 */
+.halfMedia {
+  display: flex;
+  align-items: center;
+}
+
+.halfMedia__imgWrapper {
+  margin-right: 3.33333%;
+
+  flex: 0 1 48.33333%;
+}
+
+.halfMedia__img {
+  width: 100%;
+}
+
+.halfMedia__body {
+  flex: 1;
+}
+
+.halfMedia__title {
+  margin-bottom: 10px;
+
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .halfMedia {
+    display: block;
+  }
+
+  .halfMedia__imgWrapper {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
