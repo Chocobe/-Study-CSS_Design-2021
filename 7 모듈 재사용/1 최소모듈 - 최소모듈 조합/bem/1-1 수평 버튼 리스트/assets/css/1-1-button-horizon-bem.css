@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.horizontalBtnList {
+  display: flex;
+  justify-content: center;
+}
+
+.horizontalBtnList > *:last-child {
+  margin-right: 0;
+}
+
+.horizontalBtnList__item {
+  flex: 1;
+
+  max-width: 300px;
+
+  margin-right: 20px;
+}
+
+.horizontalBtnList__btn {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  word-break: keep-all;
+}
+
+/* Helper */
+.hp_mt20 {
+  margin-top: 20px;
+}

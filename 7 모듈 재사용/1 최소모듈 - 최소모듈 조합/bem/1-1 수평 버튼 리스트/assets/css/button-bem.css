@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.ly_btn_test {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  width: 300px;
+  max-width: 100%;
+
+  padding: 20px 10px;
+
+  display: inline-block;
+
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+
+  border: 2px solid transparent;
+  background-color: #e25c00;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  transition: all 0.25s;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #e25c00;
+
+  border-color: currentColor;
+  background-color: #fff;
+}
+
+.btn_yellow {
+  color: #222;
+  background-color: #f1de00;
+}
+
+.btn_yellow:hover,
+.btn_yellow:focus {
+  border-color: #f1de00;
+}

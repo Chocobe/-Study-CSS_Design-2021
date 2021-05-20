@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.ly_btn_test {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.el_btn {
+  display: inline-block;
+
+  width: 300px;
+  max-width: 100%;
+
+  padding: 20px 10px;
+
+  border: 2px solid transparent;
+  background-color: #e25c00;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+
+  transition: all 0.25s;
+}
+
+.el_btn:hover,
+.el_btn:focus {
+  color: #e25c00;
+
+  border-color: currentColor;
+  background-color: #fff;
+}
+
+/* 확장형 */
+.el_btn__yellow {
+  color: #222;
+
+  background-color: #f1de00;
+}
+
+.el_btn__yellow:hover,
+.el_btn__yellow:focus {
+  border-color: #f1de00;
+  background-color: #fff;
+}
