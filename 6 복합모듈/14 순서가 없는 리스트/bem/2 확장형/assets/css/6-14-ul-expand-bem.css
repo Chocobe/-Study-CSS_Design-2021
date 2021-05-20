@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bulletList > *:last-child {
+  margin-bottom: 0;
+}
+
+.bulletList__item {
+  margin-bottom: 10px;
+
+  padding-left: 1em;
+
+  position: relative;
+}
+
+.bulletList__item::before {
+  content: "";
+
+  width: 0.4em;
+  height: 0.4em;
+
+  border-radius: 50%;
+  background-color: #e25c00;
+
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* 확장형 - 가로 2개 배치 */
+.bulletList_horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bulletList_horizontal .bulletList__item {
+  margin-right: 10px;
+
+  flex: calc(50% - 5px);
+}
+
+.bulletList_horizontal .bulletList__item:nth-of-type(even) {
+  margin-right: 0;
+}
