@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.testBody {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cta {
+  padding: 30px;
+
+  text-align: center;
+
+  background-color: rgba(221, 116, 44, 0.05);
+}
+
+.cta > *:last-child {
+  margin-bottom: 0;
+}
+
+.cta__title {
+  margin-top: -6px;
+  margin-bottom: 40px;
+
+  padding-bottom: 10px;
+
+  color: #e25c00;
+  font-size: 1.5em;
+  font-weight: 900;
+
+  border-bottom: 1px solid currentColor;
+}
+
+.cta__link {
+  padding-left: 1.3em;
+
+  position: relative;
+}
+
+.cta__link::before {
+  content: "\f061";
+
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  text-decoration: none;
+}
