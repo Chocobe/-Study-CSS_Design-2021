@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.testBody {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding: 20px 40px;
+}
+
+.label {
+  padding: 0.2em 0.3em;
+
+  display: inline-block;
+
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 900;
+
+  background-color: #e25c00;
+}
+
+/* 확장형 - 경고 라벨 */
+.label_warning {
+  color: #ff1493;
+
+  background-color: #f1de00;
+}

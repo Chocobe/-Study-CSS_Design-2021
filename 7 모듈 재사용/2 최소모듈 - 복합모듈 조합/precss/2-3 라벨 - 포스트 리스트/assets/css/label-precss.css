@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.ly_test_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.el_label {
+  padding: 0.2em 0.3em;
+
+  display: inline-block;
+
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 900;
+
+  background-color: #e25c00;
+}
+
+/* 확장형 - 노란색 라벨 */
+.el_label__yellow {
+  color: #000;
+
+  background-color: #f1de00;
+}
+
+/* 변화형 - 라운드 라벨 */
+.el_roundedLabel {
+  padding: 0.3em 0.9em;
+
+  display: inline-block;
+
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 900;
+
+  border-radius: 1em;
+  background-color: #e25c00;
+}

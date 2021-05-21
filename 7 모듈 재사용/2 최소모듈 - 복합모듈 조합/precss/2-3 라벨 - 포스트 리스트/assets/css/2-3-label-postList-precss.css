@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 1230px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.bl_vertPostList_header > *:last-child {
+  margin-right: 0;
+}
+
+.bl_vertPostList_date {
+  margin-right: 10px;
+}
+
+.bl_vertPostList_labelList {
+  margin-bottom: -10px;
+
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.bl_vertPostList_labelList > *:last-child {
+  margin-right: 0;
+}
+
+.bl_vertPostList_labelList_item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}

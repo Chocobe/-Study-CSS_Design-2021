@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.vertPostList__header {
+  display: flex;
+}
+
+.vertPostList__header > *:last-child {
+  margin-right: 0;
+}
+
+.vertPostList__date {
+  margin-right: 10px;
+}
+
+.labelList {
+  margin-bottom: -10px;
+
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.labelList__item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
