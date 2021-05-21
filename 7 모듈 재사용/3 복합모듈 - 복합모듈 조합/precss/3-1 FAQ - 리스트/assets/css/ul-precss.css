@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+.ly_test_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bl_bulletList > *:last-child {
+  margin-bottom: 0;
+}
+
+.bl_bulletList > li {
+  margin-bottom: 10px;
+
+  padding-left: 1em;
+
+  position: relative;
+}
+
+.bl_bulletList > li::before {
+  content: "";
+
+  width: 0.4em;
+  height: 0.4em;
+
+  display: block;
+
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+
+  border-radius: 50%;
+  background-color: #e25c00;
+}
+
+/* 확장형 - col 2 배치 */
+.bl_bulletList__horiz {
+  margin-bottom: -10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bl_bulletList__horiz > li {
+  margin-right: 10px;
+
+  flex: calc(50% - 5px);
+}
+
+.bl_bulletList__horiz > li:nth-of-type(even) {
+  margin-right: 0;
+}
+
+/* 변화형 - 하위 리스트 */
+.bl_bulletList ul {
+  margin-top: 10px;
+
+  padding-left: 1.5em;
+
+  list-style-type: circle;
+}
+
+.bl_bulletList ul > *:last-child {
+  margin-bottom: 0;
+}
+
+.bl_bulletList ul > li {
+  margin-bottom: 10px;
+}
