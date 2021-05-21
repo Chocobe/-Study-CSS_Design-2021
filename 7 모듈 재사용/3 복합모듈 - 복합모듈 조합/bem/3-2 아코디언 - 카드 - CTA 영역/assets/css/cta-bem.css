@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.testBody {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cta {
+  padding: 30px;
+
+  border: 1px solid #e25c00;
+  background-color: rgba(221, 116, 44, 0.05);
+
+  text-align: center;
+}
+
+.cta > *:last-child {
+  margin-bottom: 0;
+}
+
+.cta__title {
+  margin-top: -6px;
+  margin-bottom: 40px;
+
+  padding-bottom: 10px;
+
+  color: #e25c00;
+  font-size: 1.5rem;
+  font-weight: 900;
+
+  border-bottom: 1px solid currentColor;
+
+
+}

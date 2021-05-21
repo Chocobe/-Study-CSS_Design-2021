@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.ly_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bl_accordion .bl_cardList {
+  width: 90%;
+
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}

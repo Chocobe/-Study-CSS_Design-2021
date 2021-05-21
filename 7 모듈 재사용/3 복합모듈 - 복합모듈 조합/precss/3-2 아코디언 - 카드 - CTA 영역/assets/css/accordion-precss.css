@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.ly_test_body {
+  width: 1200px;
+  max-width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bl_accordion_body + dt {
+  margin-top: 20px;
+}
+
+.bl_accordion_btn {
+  width: 100%;
+
+  padding: 10px 40px 10px 15px;
+
+  display: block;
+  position: relative;
+
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: start;
+
+  border: 2px solid #e25c00;
+  background-color: #e25c00;
+
+  cursor: pointer;
+
+  transition: all 0.25s;
+}
+
+.bl_accordion_btn::before {
+  content: "";
+
+  width: 20px;
+  height: 2px;
+
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+
+  background-color: currentColor;
+}
+
+.bl_accordion_btn::after {
+  content: "";
+
+  width: 2px;
+  height: 20px;
+
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+
+  background-color: currentColor;
+}
+
+.bl_accordion_btn:hover,
+.bl_accordion_btn:focus {
+  color: #e25c00;
+
+  background-color: #fff;
+}
+
+.bl_accordion_btn.js_active::after {
+  content: none;
+}
+
+.bl_accordion_body {
+  padding: 15px;
+
+  display: none;
+
+  border: 1px solid #ddd;
+}
+
+.bl_accordion_body > *:last-child {
+  margin-bottom: 0;
+}
+
+.bl_accordion_body.js_active {
+  display: block;
+}
+
+.bl_accordion_content {
+  margin-bottom: 10px;
+}
