@@ -1,18 +1,25 @@
 <template>
-	<div class="home">
+	<div id="home">
 		<img alt="Vue logo" src="../assets/logo.png" />
-		<HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+		<h1 class="global_h1">Vue를 사용한 CSS 설계 정리</h1>
+		<h3 class="global_h3">with <span class="accent"> Storybook </span></h3>
 	</div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
-@Component({
-	components: {
-		HelloWorld,
-	},
-})
-export default class Home extends Vue {}
+@Component
+export default class Home extends Vue {
+	//
+}
 </script>
+
+<style lang="scss">
+#home {
+	& .accent {
+		color: #ff1493;
+		font-size: 1.5rem;
+	}
+}
+</style>
