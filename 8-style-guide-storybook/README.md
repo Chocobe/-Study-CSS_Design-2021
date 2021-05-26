@@ -375,7 +375,25 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
+```
+
+추가로 Storybook의 Global Style을 사용하려면, ``preview.js``에서 해당 ``CSS / SCSS`` 파일을 ``import`` 하면 적용 됩니다.
+
+```javascript
+// Global Style import
+import "../src/assets/scss/style.scss";
+
+export const parameters = {
+  // actions: { argTypesRegex: "^on[A-Z].*" },
+
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    }, 
+  },
+};
 ```
 
 <br/>
